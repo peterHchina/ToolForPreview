@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6A64AAC5152604D40065BF86"
-               BuildableName = "Tool For Preview.app"
-               BlueprintName = "Tool For Preview MAC"
+               BlueprintIdentifier = "6A64AAE11526050D0065BF86"
+               BuildableName = "Tool For Preview iOS.app"
+               BlueprintName = "Tool For Preview iOS"
                ReferencedContainer = "container:Tool For Preview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A64AAC5152604D40065BF86"
-            BuildableName = "Tool For Preview.app"
-            BlueprintName = "Tool For Preview MAC"
+            BlueprintIdentifier = "6A64AAE11526050D0065BF86"
+            BuildableName = "Tool For Preview iOS.app"
+            BlueprintName = "Tool For Preview iOS"
             ReferencedContainer = "container:Tool For Preview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A64AAC5152604D40065BF86"
-            BuildableName = "Tool For Preview.app"
-            BlueprintName = "Tool For Preview MAC"
+            BlueprintIdentifier = "6A64AAE11526050D0065BF86"
+            BuildableName = "Tool For Preview iOS.app"
+            BlueprintName = "Tool For Preview iOS"
             ReferencedContainer = "container:Tool For Preview.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A64AAC5152604D40065BF86"
-            BuildableName = "Tool For Preview.app"
-            BlueprintName = "Tool For Preview MAC"
+            BlueprintIdentifier = "6A64AAE11526050D0065BF86"
+            BuildableName = "Tool For Preview iOS.app"
+            BlueprintName = "Tool For Preview iOS"
             ReferencedContainer = "container:Tool For Preview.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

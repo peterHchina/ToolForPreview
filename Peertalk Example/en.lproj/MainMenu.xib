@@ -14,8 +14,8 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
-                <menuItem title="Peertalk Example" id="56">
-                    <menu key="submenu" title="Peertalk Example" systemMenu="apple" id="57">
+                <menuItem title="Tool For Preview" id="56" userLabel="Tool For Preview">
+                    <menu key="submenu" title="Tool For Preview" systemMenu="apple" id="57">
                         <items>
                             <menuItem title="About Peertalk Example" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -647,79 +647,41 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="Peertalk Example" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+        <window title="TFP" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" appearanceType="aqua" animationBehavior="default" id="371">
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="60" height="60"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
-            <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+            <view key="contentView" id="372" customClass="TFPMainView">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" scrollerKnobStyle="light" translatesAutoresizingMaskIntoConstraints="NO" id="536">
-                        <rect key="frame" x="-1" y="67" width="482" height="294"/>
-                        <clipView key="contentView" id="Me1-c7-y3z">
-                            <rect key="frame" x="0.0" y="0.0" width="482" height="294"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <textView editable="NO" importsGraphics="NO" findStyle="bar" incrementalSearchingEnabled="YES" allowsUndo="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" spellingCorrection="YES" smartInsertDelete="YES" id="537">
-                                    <rect key="frame" x="0.0" y="0.0" width="482" height="294"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="backgroundColor" red="0.1098632812" green="0.1098632812" blue="0.1098632812" alpha="1" colorSpace="calibratedRGB"/>
-                                    <size key="minSize" width="482" height="294"/>
-                                    <size key="maxSize" width="482" height="10000000"/>
-                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="482" height="294"/>
-                                    <size key="maxSize" width="482" height="10000000"/>
-                                </textView>
-                            </subviews>
-                            <color key="backgroundColor" red="0.1098632812" green="0.1098632812" blue="0.1098632812" alpha="1" colorSpace="calibratedRGB"/>
-                        </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="538">
-                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </scroller>
-                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="539">
-                            <rect key="frame" x="466" y="0.0" width="16" height="294"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </scroller>
-                    </scrollView>
-                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="551">
-                        <rect key="frame" x="20" y="20" width="440" height="24"/>
+                    <button verticalHuggingPriority="750" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9d5-6B-nhA">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="24" id="646"/>
+                            <constraint firstAttribute="height" constant="40" id="97g-MT-FOZ"/>
+                            <constraint firstAttribute="width" constant="40" id="Ysm-H7-jN4"/>
                         </constraints>
-                        <textFieldCell key="cell" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="Send a message" drawsBackground="YES" usesSingleLineMode="YES" id="552">
+                        <buttonCell key="cell" type="bevel" title="刷新" bezelStyle="circular" alignment="center" state="on" imageScaling="proportionallyDown" sound="Pop" inset="2" id="9p3-yA-YlL">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                        <connections>
-                            <action selector="sendMessage:" target="494" id="572"/>
-                        </connections>
-                    </textField>
+                        </buttonCell>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="536" firstAttribute="top" secondItem="372" secondAttribute="top" constant="-1" id="563"/>
-                    <constraint firstAttribute="trailing" secondItem="536" secondAttribute="trailing" constant="-1" id="565"/>
-                    <constraint firstItem="536" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="-1" id="566"/>
-                    <constraint firstAttribute="bottom" secondItem="536" secondAttribute="bottom" constant="67" id="637"/>
-                    <constraint firstAttribute="trailing" secondItem="551" secondAttribute="trailing" constant="20" symbolic="YES" id="640"/>
-                    <constraint firstAttribute="bottom" secondItem="551" secondAttribute="bottom" constant="20" symbolic="YES" id="644"/>
-                    <constraint firstItem="551" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="645"/>
+                    <constraint firstItem="9d5-6B-nhA" firstAttribute="centerY" secondItem="372" secondAttribute="centerY" id="6PD-BN-sde"/>
+                    <constraint firstItem="9d5-6B-nhA" firstAttribute="centerX" secondItem="372" secondAttribute="centerX" id="BY2-2q-33V"/>
                 </constraints>
             </view>
-            <connections>
-                <outlet property="initialFirstResponder" destination="551" id="579"/>
-            </connections>
+            <point key="canvasLocation" x="223" y="218"/>
         </window>
-        <customObject id="494" customClass="PTAppDelegate">
+        <customObject id="494" customClass="TFPAppDelegate">
             <connections>
-                <outlet property="inputTextField" destination="551" id="570"/>
-                <outlet property="outputTextView" destination="537" id="571"/>
-                <outlet property="window" destination="371" id="532"/>
+                <outlet property="window" destination="371" id="2cQ-9q-and"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
     </objects>
+    <resources>
+        <sound name="Pop"/>
+    </resources>
 </document>

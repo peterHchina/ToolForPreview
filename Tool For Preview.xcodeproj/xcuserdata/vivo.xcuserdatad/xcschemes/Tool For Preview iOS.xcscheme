@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6A64AAE11526050D0065BF86"
-               BuildableName = "Tool For Preview iOS.app"
+               BuildableName = "Tool For Preview.app"
                BlueprintName = "Tool For Preview iOS"
                ReferencedContainer = "container:Tool For Preview.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A64AAE11526050D0065BF86"
-            BuildableName = "Tool For Preview iOS.app"
+            BuildableName = "Tool For Preview.app"
             BlueprintName = "Tool For Preview iOS"
             ReferencedContainer = "container:Tool For Preview.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A64AAE11526050D0065BF86"
-            BuildableName = "Tool For Preview iOS.app"
+            BuildableName = "Tool For Preview.app"
             BlueprintName = "Tool For Preview iOS"
             ReferencedContainer = "container:Tool For Preview.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A64AAE11526050D0065BF86"
-            BuildableName = "Tool For Preview iOS.app"
+            BuildableName = "Tool For Preview.app"
             BlueprintName = "Tool For Preview iOS"
             ReferencedContainer = "container:Tool For Preview.xcodeproj">
          </BuildableReference>

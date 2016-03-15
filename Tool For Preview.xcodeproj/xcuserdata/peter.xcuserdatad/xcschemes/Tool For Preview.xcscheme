@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6A64AAC5152604D40065BF86"
-               BuildableName = "Tool For Preview.app"
-               BlueprintName = "Tool For Preview MAC"
+               BlueprintIdentifier = "6A88FA2F150D613800FC3647"
+               BuildableName = "libTool For Preview.a"
+               BlueprintName = "Tool For Preview"
                ReferencedContainer = "container:Tool For Preview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A64AAC5152604D40065BF86"
-            BuildableName = "Tool For Preview.app"
-            BlueprintName = "Tool For Preview MAC"
-            ReferencedContainer = "container:Tool For Preview.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A64AAC5152604D40065BF86"
-            BuildableName = "Tool For Preview.app"
-            BlueprintName = "Tool For Preview MAC"
+            BlueprintIdentifier = "6A88FA2F150D613800FC3647"
+            BuildableName = "libTool For Preview.a"
+            BlueprintName = "Tool For Preview"
             ReferencedContainer = "container:Tool For Preview.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A64AAC5152604D40065BF86"
-            BuildableName = "Tool For Preview.app"
-            BlueprintName = "Tool For Preview MAC"
+            BlueprintIdentifier = "6A88FA2F150D613800FC3647"
+            BuildableName = "libTool For Preview.a"
+            BlueprintName = "Tool For Preview"
             ReferencedContainer = "container:Tool For Preview.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

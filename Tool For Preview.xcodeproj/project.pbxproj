@@ -23,12 +23,12 @@
 		6A64AACE152604D40065BF86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A64AACC152604D40065BF86 /* InfoPlist.strings */; };
 		6A64AAD0152604D40065BF86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A64AACF152604D40065BF86 /* main.m */; };
 		6A64AAD4152604D40065BF86 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6A64AAD2152604D40065BF86 /* Credits.rtf */; };
-		6A64AAD7152604D40065BF86 /* PTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A64AAD6152604D40065BF86 /* PTAppDelegate.m */; };
+		6A64AAD7152604D40065BF86 /* TFPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A64AAD6152604D40065BF86 /* TFPAppDelegate.m */; };
 		6A64AADA152604D40065BF86 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A64AAD8152604D40065BF86 /* MainMenu.xib */; };
 		6A64AAE61526050D0065BF86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0A056E150DB1C10014D424 /* Foundation.framework */; };
 		6A64AAEE1526050D0065BF86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A64AAEC1526050D0065BF86 /* InfoPlist.strings */; };
 		6A64AAF01526050D0065BF86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A64AAEF1526050D0065BF86 /* main.m */; };
-		6A64AAF41526050D0065BF86 /* PTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A64AAF31526050D0065BF86 /* PTAppDelegate.m */; };
+		6A64AAF41526050D0065BF86 /* TFPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A64AAF31526050D0065BF86 /* TFPAppDelegate.m */; };
 		6A64AAF71526050D0065BF86 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A64AAF51526050D0065BF86 /* MainStoryboard_iPhone.storyboard */; };
 		6A64AAFA1526050D0065BF86 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A64AAF81526050D0065BF86 /* MainStoryboard_iPad.storyboard */; };
 		6A64AAFD1526050D0065BF86 /* PTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A64AAFC1526050D0065BF86 /* PTViewController.m */; };
@@ -42,6 +42,14 @@
 		6A88FA63150D61DE00FC3647 /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A88FA5F150D61DE00FC3647 /* PTUSBHub.m */; };
 		6ACFD2D6151D36220081ACF5 /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACFD2D4151D36220081ACF5 /* PTChannel.h */; };
 		6ACFD2D7151D36220081ACF5 /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFD2D5151D36220081ACF5 /* PTChannel.m */; };
+		D029BD221C94323E0046366C /* TFPMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = D029BD211C94323E0046366C /* TFPMainView.m */; };
+		D029BD251C943A3E0046366C /* TFPCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D029BD241C943A3E0046366C /* TFPCenterView.m */; };
+		D0397C411C9525E6005EE938 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0397C3C1C9525E6005EE938 /* DDHotKeyCenter.m */; };
+		D0397C421C9525E6005EE938 /* DDHotKeyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D0397C3E1C9525E6005EE938 /* DDHotKeyTextField.m */; };
+		D0397C431C9525E6005EE938 /* DDHotKeyUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D0397C401C9525E6005EE938 /* DDHotKeyUtilities.m */; };
+		D0397C451C95A246005EE938 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0397C441C95A246005EE938 /* Carbon.framework */; };
+		D0397C491C95AE8A005EE938 /* RHStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0397C481C95AE8A005EE938 /* RHStatusItemView.m */; };
+		D0397C4C1C95B1F5005EE938 /* TFPStatusPopViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0397C4B1C95B1F5005EE938 /* TFPStatusPopViewDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,22 +76,22 @@
 		6A4010D515275E3800EF0E92 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 		6A4010D615275E5400EF0E92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		6A4010D815275E9600EF0E92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		6A64AAC6152604D40065BF86 /* Tool For Preview MAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tool For Preview MAC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A64AAC6152604D40065BF86 /* Tool For Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tool For Preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A64AACB152604D40065BF86 /* Peertalk Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Peertalk Example-Info.plist"; sourceTree = "<group>"; };
 		6A64AACD152604D40065BF86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A64AACF152604D40065BF86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A64AAD1152604D40065BF86 /* Peertalk Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Peertalk Example-Prefix.pch"; sourceTree = "<group>"; };
 		6A64AAD3152604D40065BF86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		6A64AAD5152604D40065BF86 /* PTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTAppDelegate.h; sourceTree = "<group>"; };
-		6A64AAD6152604D40065BF86 /* PTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTAppDelegate.m; sourceTree = "<group>"; };
+		6A64AAD5152604D40065BF86 /* TFPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFPAppDelegate.h; sourceTree = "<group>"; };
+		6A64AAD6152604D40065BF86 /* TFPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFPAppDelegate.m; sourceTree = "<group>"; };
 		6A64AAD9152604D40065BF86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		6A64AAE21526050D0065BF86 /* Tool For Preview iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tool For Preview iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A64AAE21526050D0065BF86 /* Tool For Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tool For Preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A64AAEB1526050D0065BF86 /* Peertalk iOS Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Peertalk iOS Example-Info.plist"; sourceTree = "<group>"; };
 		6A64AAED1526050D0065BF86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A64AAEF1526050D0065BF86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A64AAF11526050D0065BF86 /* Peertalk iOS Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Peertalk iOS Example-Prefix.pch"; sourceTree = "<group>"; };
-		6A64AAF21526050D0065BF86 /* PTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTAppDelegate.h; sourceTree = "<group>"; };
-		6A64AAF31526050D0065BF86 /* PTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTAppDelegate.m; sourceTree = "<group>"; };
+		6A64AAF21526050D0065BF86 /* TFPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFPAppDelegate.h; sourceTree = "<group>"; };
+		6A64AAF31526050D0065BF86 /* TFPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFPAppDelegate.m; sourceTree = "<group>"; };
 		6A64AAF61526050D0065BF86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		6A64AAF91526050D0065BF86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		6A64AAFB1526050D0065BF86 /* PTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTViewController.h; sourceTree = "<group>"; };
@@ -101,6 +109,22 @@
 		6A88FA5F150D61DE00FC3647 /* PTUSBHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUSBHub.m; sourceTree = "<group>"; };
 		6ACFD2D4151D36220081ACF5 /* PTChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTChannel.h; sourceTree = "<group>"; };
 		6ACFD2D5151D36220081ACF5 /* PTChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTChannel.m; sourceTree = "<group>"; };
+		D029BD201C94323E0046366C /* TFPMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPMainView.h; sourceTree = "<group>"; };
+		D029BD211C94323E0046366C /* TFPMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPMainView.m; sourceTree = "<group>"; };
+		D029BD231C943A3E0046366C /* TFPCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPCenterView.h; sourceTree = "<group>"; };
+		D029BD241C943A3E0046366C /* TFPCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPCenterView.m; sourceTree = "<group>"; };
+		D029BD261C943DB70046366C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0397C3B1C9525E6005EE938 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		D0397C3C1C9525E6005EE938 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		D0397C3D1C9525E6005EE938 /* DDHotKeyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyTextField.h; sourceTree = "<group>"; };
+		D0397C3E1C9525E6005EE938 /* DDHotKeyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyTextField.m; sourceTree = "<group>"; };
+		D0397C3F1C9525E6005EE938 /* DDHotKeyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyUtilities.h; sourceTree = "<group>"; };
+		D0397C401C9525E6005EE938 /* DDHotKeyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyUtilities.m; sourceTree = "<group>"; };
+		D0397C441C95A246005EE938 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		D0397C471C95AE8A005EE938 /* RHStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHStatusItemView.h; sourceTree = "<group>"; };
+		D0397C481C95AE8A005EE938 /* RHStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHStatusItemView.m; sourceTree = "<group>"; };
+		D0397C4A1C95B1F5005EE938 /* TFPStatusPopViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPStatusPopViewDelegate.h; sourceTree = "<group>"; };
+		D0397C4B1C95B1F5005EE938 /* TFPStatusPopViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPStatusPopViewDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0397C451C95A246005EE938 /* Carbon.framework in Frameworks */,
 				6A2E8E3F15274F8E001B90E4 /* QuartzCore.framework in Frameworks */,
 				6A64AB0215260B4D0065BF86 /* libTool For Preview.a in Frameworks */,
 				6A64AAC8152604D40065BF86 /* Cocoa.framework in Frameworks */,
@@ -138,9 +163,11 @@
 		6A64AAC9152604D40065BF86 /* Tool For Preview MAC */ = {
 			isa = PBXGroup;
 			children = (
+				D0397C391C95258C005EE938 /* Addtions */,
+				D029BD1F1C9432150046366C /* View */,
 				6A64AB01152608C80065BF86 /* PTExampleProtocol.h */,
-				6A64AAD5152604D40065BF86 /* PTAppDelegate.h */,
-				6A64AAD6152604D40065BF86 /* PTAppDelegate.m */,
+				6A64AAD5152604D40065BF86 /* TFPAppDelegate.h */,
+				6A64AAD6152604D40065BF86 /* TFPAppDelegate.m */,
 				6A64AAD8152604D40065BF86 /* MainMenu.xib */,
 				6A64AACA152604D40065BF86 /* Supporting Files */,
 			);
@@ -165,8 +192,8 @@
 		6A64AAE91526050D0065BF86 /* Tool For Preview iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6A64AAF21526050D0065BF86 /* PTAppDelegate.h */,
-				6A64AAF31526050D0065BF86 /* PTAppDelegate.m */,
+				6A64AAF21526050D0065BF86 /* TFPAppDelegate.h */,
+				6A64AAF31526050D0065BF86 /* TFPAppDelegate.m */,
 				6A64AAFB1526050D0065BF86 /* PTViewController.h */,
 				47DCCCF91C8EF80200D27D57 /* test.png */,
 				6A64AAFC1526050D0065BF86 /* PTViewController.m */,
@@ -208,8 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				6A88FA30150D613800FC3647 /* libTool For Preview.a */,
-				6A64AAC6152604D40065BF86 /* Tool For Preview MAC.app */,
-				6A64AAE21526050D0065BF86 /* Tool For Preview iOS.app */,
+				6A64AAC6152604D40065BF86 /* Tool For Preview.app */,
+				6A64AAE21526050D0065BF86 /* Tool For Preview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +244,8 @@
 		6A88FA32150D613800FC3647 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0397C441C95A246005EE938 /* Carbon.framework */,
+				D029BD261C943DB70046366C /* CoreGraphics.framework */,
 				6A4010D815275E9600EF0E92 /* CoreGraphics.framework */,
 				6A4010D615275E5400EF0E92 /* UIKit.framework */,
 				6A2E8E3E15274F8E001B90E4 /* QuartzCore.framework */,
@@ -254,6 +283,50 @@
 			path = peertalk;
 			sourceTree = "<group>";
 		};
+		D029BD1F1C9432150046366C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D029BD201C94323E0046366C /* TFPMainView.h */,
+				D029BD211C94323E0046366C /* TFPMainView.m */,
+				D029BD231C943A3E0046366C /* TFPCenterView.h */,
+				D029BD241C943A3E0046366C /* TFPCenterView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0397C391C95258C005EE938 /* Addtions */ = {
+			isa = PBXGroup;
+			children = (
+				D0397C461C95AE0D005EE938 /* RHStatusItem */,
+				D0397C3A1C9525CB005EE938 /* HotKey */,
+			);
+			path = Addtions;
+			sourceTree = "<group>";
+		};
+		D0397C3A1C9525CB005EE938 /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				D0397C3B1C9525E6005EE938 /* DDHotKeyCenter.h */,
+				D0397C3C1C9525E6005EE938 /* DDHotKeyCenter.m */,
+				D0397C3D1C9525E6005EE938 /* DDHotKeyTextField.h */,
+				D0397C3E1C9525E6005EE938 /* DDHotKeyTextField.m */,
+				D0397C3F1C9525E6005EE938 /* DDHotKeyUtilities.h */,
+				D0397C401C9525E6005EE938 /* DDHotKeyUtilities.m */,
+			);
+			path = HotKey;
+			sourceTree = "<group>";
+		};
+		D0397C461C95AE0D005EE938 /* RHStatusItem */ = {
+			isa = PBXGroup;
+			children = (
+				D0397C471C95AE8A005EE938 /* RHStatusItemView.h */,
+				D0397C481C95AE8A005EE938 /* RHStatusItemView.m */,
+				D0397C4A1C95B1F5005EE938 /* TFPStatusPopViewDelegate.h */,
+				D0397C4B1C95B1F5005EE938 /* TFPStatusPopViewDelegate.m */,
+			);
+			path = RHStatusItem;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -286,7 +359,7 @@
 			);
 			name = "Tool For Preview MAC";
 			productName = "Peertalk Example";
-			productReference = 6A64AAC6152604D40065BF86 /* Tool For Preview MAC.app */;
+			productReference = 6A64AAC6152604D40065BF86 /* Tool For Preview.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6A64AAE11526050D0065BF86 /* Tool For Preview iOS */ = {
@@ -303,7 +376,7 @@
 			);
 			name = "Tool For Preview iOS";
 			productName = "Peertalk iOS Example";
-			productReference = 6A64AAE21526050D0065BF86 /* Tool For Preview iOS.app */;
+			productReference = 6A64AAE21526050D0065BF86 /* Tool For Preview.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6A88FA2F150D613800FC3647 /* Tool For Preview */ = {
@@ -392,8 +465,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0397C411C9525E6005EE938 /* DDHotKeyCenter.m in Sources */,
+				D029BD251C943A3E0046366C /* TFPCenterView.m in Sources */,
 				6A64AAD0152604D40065BF86 /* main.m in Sources */,
-				6A64AAD7152604D40065BF86 /* PTAppDelegate.m in Sources */,
+				D0397C421C9525E6005EE938 /* DDHotKeyTextField.m in Sources */,
+				6A64AAD7152604D40065BF86 /* TFPAppDelegate.m in Sources */,
+				D0397C491C95AE8A005EE938 /* RHStatusItemView.m in Sources */,
+				D0397C4C1C95B1F5005EE938 /* TFPStatusPopViewDelegate.m in Sources */,
+				D029BD221C94323E0046366C /* TFPMainView.m in Sources */,
+				D0397C431C9525E6005EE938 /* DDHotKeyUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A64AAF01526050D0065BF86 /* main.m in Sources */,
-				6A64AAF41526050D0065BF86 /* PTAppDelegate.m in Sources */,
+				6A64AAF41526050D0065BF86 /* TFPAppDelegate.m in Sources */,
 				6A64AAFD1526050D0065BF86 /* PTViewController.m in Sources */,
 				6A64AB0815260E5C0065BF86 /* PTChannel.m in Sources */,
 				6A64AB0915260E600065BF86 /* PTProtocol.m in Sources */,
@@ -487,7 +567,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Peertalk Example/Peertalk Example-Prefix.pch";
 				INFOPLIST_FILE = "Peertalk Example/Peertalk Example-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivo.TFP;
+				PRODUCT_NAME = "Tool For Preview";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -498,7 +579,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Peertalk Example/Peertalk Example-Prefix.pch";
 				INFOPLIST_FILE = "Peertalk Example/Peertalk Example-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivo.TFP;
+				PRODUCT_NAME = "Tool For Preview";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -517,8 +599,8 @@
 				GCC_PREFIX_HEADER = "Peertalk iOS Example/Peertalk iOS Example-Prefix.pch";
 				INFOPLIST_FILE = "Peertalk iOS Example/Peertalk iOS Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vivo.peektalk;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivo.TFP;
+				PRODUCT_NAME = "Tool For Preview";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -541,8 +623,8 @@
 				INFOPLIST_FILE = "Peertalk iOS Example/Peertalk iOS Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vivo.peektalk;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivo.TFP;
+				PRODUCT_NAME = "Tool For Preview";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
