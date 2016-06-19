@@ -2,6 +2,7 @@
 #import "PTUSBHub.h"
 #import "PTExampleProtocol.h"
 #import <QuartzCore/QuartzCore.h>
+#import <Carbon/Carbon.h>
 
 @interface TFPAppDelegate () {
   // If the remote connection is over USB transport...
@@ -112,7 +113,7 @@
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
     [[NSUserNotificationCenter defaultUserNotificationCenter] removeAllDeliveredNotifications];
     NSLog(@"test8======================");
-    NSImage *image = [NSImage imageNamed:@"status"];
+    NSImage *image = [NSImage imageNamed:@"menu_icon_dark"];
     statusView.image = image;
     statusView.alternateImage = image;
     [statusView.alternateImage setTemplate:YES];
@@ -357,6 +358,21 @@
       //infoTextField_.stringValue = [NSString stringWithFormat:@"Connected to device #%@\n%@", deviceID, connectedDeviceProperties_];
     }
   }];
+}
+
+-(void) regisiterHotKey{
+    DDHotKeyCenter *c = [DDHotKeyCenter sharedHotKeyCenter];
+    if (![c registerHotKeyWithKeyCode:kVK_ANSI_V modifierFlags:(NSControlKeyMask | NSAlternateKeyMask) target:self action:@selector(hotkeyWithEvent:object:) object:@"hello, world!"]) {
+        
+    } else {
+        [c registeredHotKeys];
+    }
+    
+}
+
+- (void) unregisterHotKey {
+    DDHotKeyCenter *c = [DDHotKeyCenter sharedHotKeyCenter];
+    [c unregisterHotKeyWithKeyCode:kVK_ANSI_V modifierFlags:(NSControlKeyMask | NSAlternateKeyMask)];
 }
 
 @end

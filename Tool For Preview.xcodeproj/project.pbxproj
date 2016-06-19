@@ -125,6 +125,7 @@
 		D0397C481C95AE8A005EE938 /* RHStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHStatusItemView.m; sourceTree = "<group>"; };
 		D0397C4A1C95B1F5005EE938 /* TFPStatusPopViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPStatusPopViewDelegate.h; sourceTree = "<group>"; };
 		D0397C4B1C95B1F5005EE938 /* TFPStatusPopViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPStatusPopViewDelegate.m; sourceTree = "<group>"; };
+		D0C60F001D16B97000D65A6C /* menu_icon_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon_dark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +179,7 @@
 		6A64AACA152604D40065BF86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0C60EFF1D16B97000D65A6C /* Resources */,
 				6A2E8E3C152749E0001B90E4 /* Icon.icns */,
 				4788DE221C85C05D001DC5D8 /* test.png */,
 				6A64AACB152604D40065BF86 /* Peertalk Example-Info.plist */,
@@ -325,6 +327,14 @@
 				D0397C4B1C95B1F5005EE938 /* TFPStatusPopViewDelegate.m */,
 			);
 			path = RHStatusItem;
+			sourceTree = "<group>";
+		};
+		D0C60EFF1D16B97000D65A6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0C60F001D16B97000D65A6C /* menu_icon_dark.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
